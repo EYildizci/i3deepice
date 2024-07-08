@@ -3,7 +3,7 @@ from I3Tray import *
 import sys
 import numpy as np
 import os
-sys.path.append('../')
+sys.path.append('/data/user/eyildizci/combined_fit_for_pev_energies/i3deepice/')
 from i3deepice.i3module import DeepLearningModule, print_info
 import argparse
 

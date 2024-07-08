@@ -10,4 +10,4 @@ if [ ! -e /usr/local/cuda/bin/ ]; then
 else
    echo "Running on GPU!"
 fi
-singularity exec --nv -B /home/$USER/:/home/$USER/ -B /mnt/lfs7/user/:/data/user/ -B /mnt/lfs6/ana/:/data/ana/ -B /mnt/lfs6/sim/:/data/sim/ /data/user/tglauch/icetray_combo-stable-tensorflow.1.13.2-ubuntu18.04.sif /usr/local/icetray/env-shell.sh python $@
+singularity exec --nv -B /home/$USER/:/home/$USER/ -B /mnt/lfs7/user/:/data/user/ -B /mnt/lfs6/ana/:/data/ana/ -B /mnt/lfs6/sim/:/data/sim/ /data/user/tglauch/icetray_combo-stable-tensorflow.1.13.2-ubuntu18.04.sif /usr/local/icetray/env-shell.sh python "/data/user/eyildizci/combined_fit_for_pev_energies/i3deepice/examples/example1.py" $@
